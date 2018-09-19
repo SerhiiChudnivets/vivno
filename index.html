@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bg">
+
+
+    </div>
+    <div class="container d-flex justify-content-center">
+        <form action="">
+            <input type="hidden" name="from" id="inp-from" value="Київ">
+            <input type="hidden" name="to" id="inp-to" value="">
+            <input type="hidden" name="range-min" id="range-min" value="6">
+            <input type="hidden" name="range-max" id="range-max" value="8">
+
+
+
+            <div class="form-menu mb-16">
+                <div id="block-to" class="d-flex flex-column" onclick="mouseclick();">
+                    <label for="to" class="text-light lat-spasing">Куда вы хотите поехать?</label>
+                    <div class="bg-light bl-3">
+
+                        <div id="to" class="d-flex align-items-center">
+
+                            Укажите страну, город или отель
+                        </div>
+                        <div id="to-fade" class="bg-light">
+                            <div>
+                                <div class="row option mx-0 ">
+                                    <div class="col-12 header-option ">МЕСТА</div>
+                                </div>
+                                <div class="row option mx-0 body-option">
+                                    <div class="col-8">Крит, <span class="value-option">Греция</span></div>
+                                    <div class="col-4  text-right">от $96</div>
+                                </div>
+                                <div class="row option mx-0 body-option">
+                                    <div class="col-8 ">Остров Кипр, <span class="value-option">Кипр</span></div>
+                                    <div class="col-4  text-right">от $130</div>
+                                </div>
+                                <div class="row option mx-0 body-option">
+                                    <div class="col-8 ">Пхукет, <span class="value-option">Тайланд </span></div>
+                                    <div class="col-4 text-right">от $130</div>
+                                </div>
+                                <div class="row option mx-0 body-option">
+                                    <div class="col-8 ">Коста-Рика</div>
+                                    <div class="col-4  text-right">от $230</div>
+                                </div>
+                                <div class="row option mx-0 body-option">
+                                    <div class="col-8 ">Пекин, <span class="value-option">Китай</span></div>
+                                    <div class="col-4  text-right">от $780</div>
+                                </div>
+                                <div class="row option mx-0">
+                                    <div class="col-12  header-option">ОТЕЛИ</div>
+                                </div>
+                                <div class="row option mx-0 body-option">
+                                    <div class="col-12 ">Краун Плаза Москва,<span class="value-option"> Москва, Россия</span></div>
+                                </div>
+                                <div class="row option mx-0 body-option">
+                                    <div class="col-12 ">Отель Кайзерхоф,<span class="value-option"> Калининград, Россия</span></div>
+                                </div>
+                                <div class="row option mx-0 body-option">
+                                    <div class="col-12 ">Кантри Резорт Отель, <span class="value-option">Верблики, Россия</span></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="block-from" class="d-flex flex-column" onclick="mouseclickfrom();">
+                    <label for="from" class="text-light">Отправление</label>
+                    <div class="bg-light">
+                        <div id="from" class="d-flex align-items-center">Киев
+                            <div class="bird"></div>
+                        </div>
+                        <div id="from-fade" class="bg-light">
+                            <div>
+                                <div class="row mx-0">
+                                    <div class="col-12 option body-town">Киeв</div>
+                                </div>
+                                <div class="row mx-0">
+                                    <div class="col-12 option body-town-odd">Кривой Рог</div>
+                                </div>
+                                <div class="row mx-0">
+                                    <div class="col-12 option body-town">Львов</div>
+                                </div>
+                                <div class="row mx-0">
+                                    <div class="col-12 option body-town-odd">Николаев</div>
+                                </div>
+                                <div class="row mx-0">
+                                    <div class="col-12 option body-town">Одесса</div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div id="block-range" class="d-flex flex-column">
+                    <label for="range" class="text-light">Количество ночей</label>
+                    <div id="range" class="range-nights" onmouseover="mouselog(event)" onmouseout="mouselog(event)">
+                        <div class="days-center"><span id="start">от</span><input class="p-0" type="text" id="minCost" value="6"
+                                disabled><span id="finish">до</span><input type="text" class="p-0" id="maxCost" value="8" disabled></div>
+                        <div class="bird-range"></div>
+                        <div class="nights" onmouseover="mouselog(event)" onmouseout="mouselog(event)">
+                            <div class="ui-container" id="nights">
+                                <div class="relative range-day"> <span class="start-range">1</span><span class="finish-range">24</span></div>
+                                <div id="slider"></div>
+                                <div>
+                                    <span class="widj-from">От</span>
+                                    <input type="text" class="widj-value" id="minCost2" value="6" disabled>
+                                    <span class="dash">&mdash;</span>
+                                    <span class="widj-to">до</span><input type="text" id="maxCost2" value="8" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="send-form" class="d-flex align-items-end">
+                    <input type="submit" method="POST" class="text-light" name="" id="btn-submit" value="Поиск туров">
+                </div>
+
+            </div>
+            <div class="some-options">
+                <div class="row  ">
+                    <div class="col-6 text-light ">Например: <u>туры в Египет</u></div>
+                    <div class="col-6 text-right text-light d-flex justify-content-end">
+                        <div class="bg-eqlzr"></div>Расширенный подбор
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/jq_b.js"></script>
+    <script src="js/range_prices.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
