@@ -4,260 +4,249 @@ body {
     background: rgb(72, 0, 167);
     font-family: 'Fira Sans', sans-serif !important;
 }
-.container{
-    width: 780px;
+
+.container {
     height: 120.4px;
     padding-top: 100px;
 }
-/*родит-й блок*/   
+
 .ui-container {
     text-align: center;
 }
 
-/* Ширина слайдера */
-#slider  {	
-   width: 100%;
+#slider {
+    width: 100%;
 }
 
-/* Контейнер слайдера */
 .ui-slider {
-	 position: relative;
+    position: relative;
 }
 
-
-/* Ползунок */
 .ui-slider .ui-slider-handle {
-	 position: absolute;
-	 z-index: 2;
-	 width: 13px;   /* Задаем нужную ширину */
-	 height: 13px;  /* и высоту */
-	 background: url(../img/oval.svg) no-repeat; /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
-	 cursor: pointer
+    position: absolute;
+    z-index: 2;
+    width: 13px;
+    height: 13px;
+    background: url(../img/oval.svg) no-repeat;
+    cursor: pointer
 }
 
 .ui-slider .ui-slider-handle:hover {
-	 background: url(../img/oval.svg) no-repeat!important;
+    background: url(../img/oval.svg) no-repeat!important;
 }
-
 
 .ui-slider .ui-slider-range {
-	 position: absolute;
-	 z-index: 1;
-	 font-size: .7em;
-	 display: block;
-	 border: 0;
-	 overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
 }
 
-/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
 .ui-slider-horizontal {
-	 height: 3px; /* задаем высоту согласно дизайна */
+    height: 3px;
 }
 
-/* позиционируем ползунки */
-.ui-slider-horizontal .ui-slider-handle { 
-	 top: -5px;
-	 margin-left: -6px;
+.ui-slider-horizontal .ui-slider-handle {
+    top: -5px;
+    margin-left: -6px;
 }
 
 .ui-slider-horizontal .ui-slider-range {
-	 top: 0;
-	 height: 100%;
+    top: 0;
+    height: 100%;
 }
 
-.ui-slider-horizontal .ui-slider-range-min { 
-	 left: 0;
+.ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
 }
 
 .ui-slider-horizontal .ui-slider-range-max {
-	 right: 0;
+    right: 0;
 }
 
-/* оформление полосы по которой ходит ползунок */
-.ui-widget-content { 	 
-	 background: #fff;
+.ui-widget-content {
+    background: #fff;
 }
 
-/* оформление активного участка (между двумя ползунками) */
-.ui-widget-header { 	
-	    background: #1886f4;
+.ui-widget-header {
+    background: #1886f4;
 }
-/* скругление для полосы слайдера */
+
 .ui-corner-all {
-	 -moz-border-radius: 4px;
-	 -webkit-border-radius: 4px;
-	 border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
 }
 
 #minCost2, #maxCost2, #minCost, #maxCost {
     width: 20px;
-	
-	 padding: 6px 2px;
-	 text-align: center;
-	 color: #6c6c6c;
-	 font-size: 90%;
-	 
+    padding: 6px 2px;
+    text-align: center;
+    color: #6c6c6c;
+    font-size: 90%;
 }
-#maxCost2{
-    position: absolute;
-top: 60px;
-left: 85px;
 
+#maxCost2 {
+    position: absolute;
+    top: 60px;
+    left: 85px;
 }
-.text-light{
-    font-family: 'Fira Sans',sans-serif;
+
+.text-light {
+    font-family: 'Fira Sans', sans-serif;
     font-size: 14px;
     line-height: 16px;
 }
-#minCost,#maxCost{
+
+#minCost, #maxCost {
     width: 13px;
     color: #303F4D;
 }
-#minCost{
+
+#minCost {
     position: absolute;
-left: 15px;
-
-
+    left: 15px;
 }
-#finish{
+
+#finish {
     left: 29px;
     position: absolute;
-
-
 }
-#maxCost{
+
+#maxCost {
     position: absolute;
     left: 46px;
-    
-
 }
+
 label {
     margin-bottom: 12px !important;
 }
 
 #minCost:hover, #maxCost:hover {
-	 border: 1px solid #000;
+    border: 1px solid #000;
 }
 
 .ui-container span {
-	 display: inline-block;
-	 margin: 0 9px;
-	 font-size: 90%;
+    display: inline-block;
+    margin: 0 9px;
+    font-size: 90%;
 }
 
 .ui-container input {
-	 border: 1px solid #ccc;
-	 padding: 5px 7px;
-	 font-size: 90%;
-	 letter-spacing: 0.5px;
-	 color: #2A2A2A;
+    border: 1px solid #ccc;
+    padding: 5px 7px;
+    font-size: 90%;
+    letter-spacing: 0.5px;
+    color: #2A2A2A;
 }
-.range-nights{
-    width:184px;
+
+.range-nights {
+    width: 184px;
     position: relative;
-    border-top:1px solid gray;
-    border-bottom:1px solid gray;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
     border-left: 1px solid gray;
     border-right: 0px;
     background: #fff;
 }
- .nights{ 
+
+.nights {
     display: none;
-     padding: 16px;
-     width: 210px;
-     height: 100px;
-     position: absolute;
-     top:65px;
+    padding: 16px;
+    width: 210px;
+    height: 100px;
+    position: absolute;
+    top: 65px;
     border-radius: 3px;
     background: white;
     left: 0px;
+    z-index: 99;
+}
 
- }
- #minCost2[disabled],#maxCost2[disabled],#minCost[disabled],#maxCost[disabled]{
-     background: white;
-     border: 0px;
- }
- .lat-spasing{
-     letter-spacing: 0.05px;
- }
- #to{
-     font-size: 14px;
-     line-height: 16px;
-     padding-left: 40px;
-     width: 288px;
-     border:none;
-     border-right: 1px solid #CFDAE6;
-     border-radius: 3px 0px 0px 3px;
-     color:#B8C1CC;
-     background-image: url(../img/shape.svg);
-     background-repeat: no-repeat;
-     background-position: 18px 22px;
-     -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding-left: 40px;
-     
- }
- #from{
-     position: relative;
-     width:160px;
+#minCost2[disabled], #maxCost2[disabled], #minCost[disabled], #maxCost[disabled] {
+    background: white;
+    border: 0px;
+}
+
+.lat-spasing {
+    letter-spacing: 0.05px;
+}
+
+#to {
     font-size: 14px;
     line-height: 16px;
-    border:none;
+    width: 288px;
+    border: none;
     border-right: 1px solid #CFDAE6;
-     background-image: url(../img/plane.svg);
-     background-repeat: no-repeat;
-     background-position: 16px 22px;
-     -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding-left: 39px;
-color: #303F4D;
-padding-top: 2px;
+    border-radius: 3px 0px 0px 3px;
+    color: #B8C1CC;
+    background-image: url(../img/shape.svg);
+    background-repeat: no-repeat;
+    background-position: 18px 22px;
+    padding-left: 40px;
+}
 
- }
+#from {
+    position: relative;
+    width: 160px;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+    border-right: 1px solid #CFDAE6;
+    background-image: url(../img/plane.svg);
+    background-repeat: no-repeat;
+    background-position: 16px 22px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-left: 39px;
+    color: #303F4D;
+    padding-top: 2px;
+}
 
-.bg{
+.bg {
     position: absolute;
     background-image: url(../img/bg.svg);
     height: 100%;
     z-index: -10;
-    width: 100%;
+    width: 1440px;
     background-repeat: no-repeat;
 }
-#btn-submit{
+
+#btn-submit {
     background: linear-gradient(360deg, #1885F2 0%, #198CFF 100%);
-box-shadow: 0px 3px 4px rgba(25, 140, 255, 0.2);
-border:none;
-border-radius: 3px;
-width: 146px;
-height: 60px;
-border-radius: 0px 3px 3px 0px;
-
+    box-shadow: 0px 3px 4px rgba(25, 140, 255, 0.2);
+    border: none;
+    border-radius: 3px;
+    width: 146px;
+    height: 60px;
+    border-radius: 0px 3px 3px 0px;
 }
- 
-/* Rectangle 2 */
 
-.form-menu{
-    display:flex;
-    
+.form-menu {
+    display: flex;
 }
+
 #range {
     width: 184;
-    border:none;
+    border: none;
     background-image: url(../img/moon.svg);
     background-repeat: no-repeat;
     background-position: 17px 22px;
-     -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding-left: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-left: 40px;
 }
-#from,#range,#to{
+
+#from, #range, #to {
     height: 60px;
 }
-.days-center{
-    font-family: 'Fira Sans',sans-serif;
+
+.days-center {
+    font-family: 'Fira Sans', sans-serif;
     font-size: 14px;
     color: #303F4D;
     line-height: 16px;
@@ -265,73 +254,77 @@ border-radius: 0px 3px 3px 0px;
     top: 22px;
     left: 39px;
     white-space: nowrap;
-    
-
 }
-option{
-    font-family: 'Fira Sans',sans-serif;
+
+option {
+    font-family: 'Fira Sans', sans-serif;
     font-size: 14px;
     line-height: 16px;
 }
-.coutry{
-    color:#B8C1CC;
+
+.coutry {
+    color: #B8C1CC;
 }
 
-#to-fade,#from-fade{
+#to-fade, #from-fade {
     display: none;
     position: absolute;
     z-index: 30;
 }
-.option{
+
+.option {
     cursor: pointer;
     border-bottom: 1px solid gainsboro;
 }
-.header-option{
+
+.header-option {
     height: 37px;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.2px;
     padding-top: 12px;
-margin-left: 1px;
-
-    
+    margin-left: 1px;
 }
-.body-option,.body-town{
+
+.body-option, .body-town {
     padding-top: 16px;
     font-size: 14px;
     line-height: 16px;
     height: 46.666px;
 }
-.body-town-odd{
+
+.body-town-odd {
     padding-top: 16px;
     font-size: 14px;
     line-height: 16px;
     height: 48px;
 }
-.body-option:hover , .body-town:hover{
-    
+
+.body-option:hover, .body-town:hover {
     background: rgba(204, 229, 255, 0.5);
 }
-#to-fade{
-    
+
+#to-fade {
     width: 350px;
     margin-top: 5px;
     border-radius: 3px;
-   
-    
 }
-#from-fade{
-    width:210px;
+
+#from-fade {
+    width: 210px;
     margin-top: 5px;
     border-radius: 3px;
 }
-.relative{
+
+.relative {
     position: relative;
 }
-.bl-3{
+
+.bl-3 {
     border-radius: 3px 0px 0px 3px;
 }
-.bird,.bird-range{
+
+.bird, .bird-range {
     position: absolute;
     background-image: url('../img/bird.svg');
     z-index: 4;
@@ -340,68 +333,72 @@ margin-left: 1px;
     left: 138px;
     background-repeat: no-repeat;
     top: 28px;
-    
 }
-.bird-range{
- left: 158px;
+
+.bird-range {
+    left: 158px;
 }
-.transform-bird{
-    transform:rotate(180deg);
+
+.transform-bird {
+    transform: rotate(180deg);
 }
-.bg-eqlzr{
+
+.bg-eqlzr {
     background-image: url('../img/eqlzr.svg');
     background-repeat: no-repeat;
     height: 16px;
     width: 16px;
     margin-right: 6px;
 }
-.mb-16{
+
+.mb-16 {
     margin-bottom: 16px;
 }
-.value-option{
-    color:#6B87A4;
+
+.value-option {
+    color: #6B87A4;
 }
-.range-day{
-height: 28px;
+
+.range-day {
+    height: 28px;
 }
-.start-range{
+
+.start-range {
     position: absolute;
     top: -3px;
     right: 162px;
-    
 }
-.finish-range{
+
+.finish-range {
     position: absolute;
     left: 154px;
     z-index: 5;
-    
-    top:-3px;
+    top: -3px;
 }
-.widj-from{
+
+.widj-from {
     position: absolute;
     left: 7px;
     top: 65px;
     z-index: 10;
-    
 }
-.widj-value{
+
+.widj-value {
     position: absolute;
     left: 31px;
     top: 60px;
     z-index: 4;
-    
 }
-.dash{
+
+.dash {
     position: absolute;
     top: 66px;
     left: 43px;
     z-index: 5;
-
-
 }
-.widj-to{
+
+.widj-to {
     position: absolute;
     left: 58px;
     top: 66px;
-    
 }

@@ -26,7 +26,7 @@
 
 
 
-            <div class="form-menu mb-16">
+            <div class="form-menu ">
                 <div id="block-to" class="d-flex flex-column" onclick="mouseclick();">
                     <label for="to" class="text-light lat-spasing">Куда вы хотите поехать?</label>
                     <div class="bg-light bl-3">
@@ -108,9 +108,9 @@
                         </div>
                     </div>
                 </div>
-                <div id="block-range" class="d-flex flex-column">
+                <div id="block-range" class="d-flex flex-column ">
                     <label for="range" class="text-light">Количество ночей</label>
-                    <div id="range" class="range-nights" onmouseover="mouselog(event)" onmouseout="mouselog(event)">
+                    <div id="range" class="range-nights mb-16" onmouseover="mouselog(event)" onmouseout="mouselog(event)">
                         <div class="days-center"><span id="start">от</span><input class="p-0" type="text" id="minCost" value="6"
                                 disabled><span id="finish">до</span><input type="text" class="p-0" id="maxCost" value="8" disabled></div>
                         <div class="bird-range"></div>
@@ -131,7 +131,7 @@
 
                     </div>
                 </div>
-                <div id="send-form" class="d-flex align-items-end">
+                <div id="send-form" class="d-flex align-items-end mb-16">
                     <input type="submit" method="POST" class="text-light" name="" id="btn-submit" value="Поиск туров">
                 </div>
 
