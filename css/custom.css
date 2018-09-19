@@ -227,6 +227,7 @@ label {
 
 .form-menu {
     display: flex;
+    margin-left:-2px;
 }
 
 #range {
