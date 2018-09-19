@@ -25,8 +25,8 @@ body {
 .ui-slider .ui-slider-handle {
     position: absolute;
     z-index: 2;
-    width: 13px;
-    height: 13px;
+    width: 16px;
+    height: 16px;
     background: url(../img/oval.svg) no-repeat;
     cursor: pointer
 }
